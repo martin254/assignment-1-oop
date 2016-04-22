@@ -1,0 +1,192 @@
+oopii@oopiibox:~$ ls
+Desktop  Documents  Downloads  Music  oopii  Pictures  Public  Templates  Videos
+oopii@oopiibox:~$ cd Documents
+oopii@oopiibox:~/Documents$ ls
+a.out    helloworld.cpp  input.cpp  three.cpp        two.cpp
+bob.cpp  if.cpp          one.cpp    threeoutput.txt  variables.cpp
+oopii@oopiibox:~/Documents$ g++ if.cpp
+oopii@oopiibox:~/Documents$ ./a.out
+x is greater than y
+oopii@oopiibox:~/Documents$ ls
+a.out    helloworld.cpp  input.cpp  switch.cpp  threeoutput.txt  variables.cpp
+bob.cpp  if.cpp          one.cpp    three.cpp   two.cpp
+oopii@oopiibox:~/Documents$ g++ switch.cpp
+switch.cpp: In function ‘int main()’:
+switch.cpp:9:1: error: expected ‘;’ before ‘break’
+ break;
+ ^
+switch.cpp:10:1: error: case label ‘2’ not within a switch statement
+ case 2:
+ ^
+switch.cpp:11:1: error: case label ‘3’ not within a switch statement
+ case 3:
+ ^
+switch.cpp:13:1: error: break statement not within loop or switch
+ break;
+ ^
+switch.cpp:14:1: error: case label not within a switch statement
+ default:
+ ^
+switch.cpp: At global scope:
+switch.cpp:17:1: error: expected unqualified-id before ‘return’
+ return 0;
+ ^
+switch.cpp:18:1: error: expected declaration before ‘}’ token
+ }
+ ^
+oopii@oopiibox:~/Documents$ g++ switch.cpp
+switch.cpp: In function ‘int main()’:
+switch.cpp:9:1: error: break statement not within loop or switch
+ break;
+ ^
+switch.cpp:10:1: error: case label ‘2’ not within a switch statement
+ case 2:
+ ^
+switch.cpp:11:1: error: case label ‘3’ not within a switch statement
+ case 3:
+ ^
+switch.cpp:13:1: error: break statement not within loop or switch
+ break;
+ ^
+switch.cpp:14:1: error: case label not within a switch statement
+ default:
+ ^
+switch.cpp: At global scope:
+switch.cpp:17:1: error: expected unqualified-id before ‘return’
+ return 0;
+ ^
+switch.cpp:18:1: error: expected declaration before ‘}’ token
+ }
+ ^
+oopii@oopiibox:~/Documents$ g++ switch.cpp
+oopii@oopiibox:~/Documents$ ./a.out
+x is not1,2 or 3oopii@oopiibox:~/Documents$ ls
+a.out    helloworld.cpp  input.cpp  switch.cpp  threeoutput.txt  variables.cpp
+bob.cpp  if.cpp          one.cpp    three.cpp   two.cpp          while.cpp
+oopii@oopiibox:~/Documents$ g++ whil.cpp
+g++: error: whil.cpp: No such file or directory
+g++: fatal error: no input files
+compilation terminated.
+oopii@oopiibox:~/Documents$ g++ while.cpp
+while.cpp:8:1: error: stray ‘\’ in program
+ cout<<"x<<"\n";
+ ^
+while.cpp:8:14: warning: missing terminating " character
+ cout<<"x<<"\n";
+              ^
+while.cpp:8:1: error: missing terminating " character
+ cout<<"x<<"\n";
+ ^
+while.cpp: In function ‘int main()’:
+while.cpp:8:13: error: expected ‘;’ before ‘n’
+ cout<<"x<<"\n";
+             ^
+oopii@oopiibox:~/Documents$ g++ while.cpp
+oopii@oopiibox:~/Documents$ ./a.out
+x is10
+oopii@oopiibox:~/Documents$ ls
+a.out    helloworld.cpp  one.cpp     threeoutput.txt  while.cpp
+bob.cpp  if.cpp          switch.cpp  two.cpp
+for.cpp  input.cpp       three.cpp   variables.cpp
+oopii@oopiibox:~/Documents$ g++ for.cpp
+oopii@oopiibox:~/Documents$ ./a.out
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+oopii@oopiibox:~/Documents$ ls
+a.out    helloworld.cpp  nesting.cpp  three.cpp        variables.cpp
+bob.cpp  if.cpp          one.cpp      threeoutput.txt  while.cpp
+for.cpp  input.cpp       switch.cpp   two.cpp
+oopii@oopiibox:~/Documents$ g++ nesting.cpp
+oopii@oopiibox:~/Documents$ ./a.out
+x is greater than y<nx is not equal to 6
+oopii@oopiibox:~/Documents$ ls
+a.out    helloworld.cpp  nest.cpp     switch.cpp       two.cpp
+bob.cpp  if.cpp          nesting.cpp  three.cpp        variables.cpp
+for.cpp  input.cpp       one.cpp      threeoutput.txt  while.cpp
+oopii@oopiibox:~/Documents$ g++ nest.cpp
+oopii@oopiibox:~/Documents$ ./a.out
+0123
+0123
+0123
+0123
+oopii@oopiibox:~/Documents$ ls
+a.out    helloworld.cpp  nest.cpp     switchcase.cpp  threeoutput.txt  while.cpp
+bob.cpp  if.cpp          nesting.cpp  switch.cpp      two.cpp
+for.cpp  input.cpp       one.cpp      three.cpp       variables.cpp
+oopii@oopiibox:~/Documents$ g++ switchcase.cpp
+switchcase.cpp: In function ‘int main()’:
+switchcase.cpp:5:8: error: ‘n’ was not declared in this scope
+ switch(n)
+        ^
+switchcase.cpp:21:6: error: expected ‘;’ before ‘:’ token
+ break:
+      ^
+switchcase.cpp:21:6: error: expected primary-expression before ‘:’ token
+switchcase.cpp:29:1: error: expected ‘}’ at end of input
+ }
+ ^
+oopii@oopiibox:~/Documents$ ^C
+oopii@oopiibox:~/Documents$ g++ switchcase.cpp
+switchcase.cpp: In function ‘int main()’:
+switchcase.cpp:22:6: error: expected ‘;’ before ‘:’ token
+ break:
+      ^
+switchcase.cpp:22:6: error: expected primary-expression before ‘:’ token
+switchcase.cpp:30:1: error: expected ‘}’ at end of input
+ }
+ ^
+oopii@oopiibox:~/Documents$ g++ switchcase.cpp
+switchcase.cpp: In function ‘int main()’:
+switchcase.cpp:30:1: error: expected ‘}’ at end of input
+ }
+ ^
+oopii@oopiibox:~/Documents$ g++ switchcase.cpp
+oopii@oopiibox:~/Documents$ ./a.out
+n is an even number.
+oopii@oopiibox:~/Documents$ ls
+a.out         helloworld.cpp  nesting.cpp     three.cpp        while.cpp
+bob.cpp       if.cpp          one.cpp         threeoutput.txt
+continue.cpp  input.cpp       switchcase.cpp  two.cpp
+for.cpp       nest.cpp        switch.cpp      variables.cpp
+oopii@oopiibox:~/Documents$ g++ continue.cpp
+continue.cpp: In function ‘int main()’:
+continue.cpp:10:1: error: expected ‘}’ at end of input
+ }
+ ^
+oopii@oopiibox:~/Documents$ g++ continue.cpp
+oopii@oopiibox:~/Documents$ ./a.out
+0'n2'n4'n6'n8'n10'noopii@oopiibox:~/Documents$ g++ continue.cpp
+oopii@oopiibox:~/Documents$ ./a.out
+0n2n4n6n8n10noopii@oopiibox:~/Documents$ g++ continue.cpp
+oopii@oopiibox:~/Documents$ ./a.out
+0
+2
+4
+6
+8
+10
+oopii@oopiibox:~/Documents$ ls
+a.out         helloworld.cpp  nesting.cpp     switch.cpp       variables.cpp
+bob.cpp       if.cpp          one.cpp         three.cpp        while.cpp
+continue.cpp  input.cpp       scope.cpp       threeoutput.txt
+for.cpp       nest.cpp        switchcase.cpp  two.cpp
+oopii@oopiibox:~/Documents$ g++ scope.cpp
+scope.cpp: In function ‘int main()’:
+scope.cpp:9:6: error: conflicting declaration ‘char arg1’
+ char arg1='A';
+      ^
+scope.cpp:5:5: note: previous declaration as ‘int arg1’
+ int arg1;
+     ^
+scope.cpp:10:7: error: ‘arg’ was not declared in this scope
+ cout<<arg<<"\n";
+       ^
+oopii@oopiibox:~/Documents$ 
